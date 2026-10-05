@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomous-climate-scientist"
+version = "0.1.0"
+description = "Reproducible, tool-driven climate analysis agent using local Open-Meteo data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.1", "numpy>=1.26", "scipy>=1.11", "scikit-learn>=1.4",
+  "matplotlib>=3.9", "plotly>=5.20", "pydantic>=2.6", "python-dotenv>=1.0",
+  "langchain>=0.2", "langgraph>=0.2", "langchain-openai>=0.1", "streamlit>=1.33"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
